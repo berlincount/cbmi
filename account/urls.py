@@ -11,6 +11,7 @@ urlpatterns = patterns(
     url(r'^nrf24/$', 'account.views.nrf24', name='nrf24'),
     url(r'^password/$', 'account.views.password', name='password'),
     url(r'^sippin/$', 'account.views.sippin', name='sippin'),
+    url(r'^cash/$', 'account.views.cash', name='cash'),
     url(r'^clabpin/$', 'account.views.clabpin', name='clabpin'),
     url(r'^admin/$', 'account.views.admin', name='admin'),
     url(r'^$', 'account.views.home', name="home"),

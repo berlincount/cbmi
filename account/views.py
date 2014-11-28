@@ -88,6 +88,12 @@ def home(request):
     return render(request, 'home.html', context)
 
 @login_required
+def cash(request):
+    member = retrieve_member(request)
+    context = {'member': member.to_dict()}
+    return render(request, 'cash.html', context)
+
+@login_required
 def auth_logout(request):
     request.session.pop(ENCRYPTED_LDAP_PASSWORD)
     redirect_to = request.GET.get('next', '') or '/'

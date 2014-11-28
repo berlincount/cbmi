@@ -1,0 +1,21 @@
+{% extends "member_base.html" %}
+{% load i18n %}
+
+{% block container %}
+    <div class="row">
+        <div class="span12">
+            <h2>{% trans "Red tape" %}</h2>
+            <p>{% blocktrans %}Here you can view the bureaucratic reality as experienced by the board.{% endblocktrans %}</p>
+
+            <h3>{% trans "Your membership information in our database" %}</h3>
+
+            <table>
+                <tr>
+                    <th>Not implemented.</th>
+                </tr>
+            </table>
+
+            <p>{% blocktrans %}For any changes to the information stored please contact{% endblocktrans %} <a href="mailto:cash@c-base.org">cash@c-base.org</a>.</p>
+        </div>
+    </div>
+{% endblock container %}
